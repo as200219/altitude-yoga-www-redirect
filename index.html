@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Altitude Yoga</title>
+    <!-- www.altitude.yoga only forwards to the studio site. Change STUDIO in both places below. -->
+    <link rel="canonical" href="https://studio.altitude.yoga/" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="0; url=http://studio.altitude.yoga/" />
+    <script>
+      (function () {
+        var STUDIO = "http://studio.altitude.yoga";
+        // Old Wix addresses people may have saved, mapped to the new pages.
+        var OLD = { "/team-1": "/teachers.html", "/home": "/" };
+        var path = location.pathname.replace(/\/+$/, "") || "/";
+        var page = OLD[path] || (/\.html$/.test(path) ? path : "/");
+        location.replace(STUDIO + page + location.search + location.hash);
+      })();
+    </script>
+    <style>
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #eeece6; color: #141414;
+        font: 14px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center; }
+      a { color: inherit; }
+    </style>
+  </head>
+  <body>
+    <p>Altitude Yoga has moved to <a href="http://studio.altitude.yoga/">studio.altitude.yoga</a>.</p>
+  </body>
+</html>
